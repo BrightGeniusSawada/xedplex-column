@@ -1,17 +1,51 @@
 #!/usr/bin/env python3
-# XedPlex コラム note用アイキャッチ画像ジェネレータ
+# XedPlex コラム アイキャッチ画像ジェネレータ
 # 使い方: python3 eyecatch.py "タイトル" "サブタイトル" 出力ファイル.png
-# サイズ: 1280x670（noteの推奨アイキャッチ比率）
+#   - タイトル中の「|」は強制改行（例: "塾のシステム、どう選ぶ？|小規模塾の5つの基準"）
+#   - 行頭に「、。？」などが来ないよう簡易禁則処理を行う
+# サイズ: 1280x670（OGP / note の推奨比率）
+import os
 import sys
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1280, 670
-FONT = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
-FONT_BLACK = "/usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc"
+FONT_DIR = "/usr/share/fonts/opentype/noto"
+FONT = os.path.join(FONT_DIR, "NotoSansCJK-Bold.ttc")
+FONT_BLACK = os.path.join(FONT_DIR, "NotoSansCJK-Black.ttc")
+if not os.path.exists(FONT_BLACK):
+    FONT_BLACK = FONT  # Black が無い環境では Bold で代用
+
+# 行頭禁則（この文字で行を始めない）／行末禁則（この文字で行を終えない）
+NO_HEAD = set("、。，．・：；？！?!」』）〕］｝〉》〟ー～…‥っゃゅょぁぃぅぇぉッャュョァィゥェォ")
+NO_TAIL = set("「『（〔［｛〈《〝")
 
 
 def lerp(c1, c2, t):
     return tuple(int(a + (b - a) * t) for a, b in zip(c1, c2))
+
+
+def wrap(d, text, font, max_w):
+    """1文字ずつ詰めて折り返す。「|」は強制改行。簡易禁則つき。"""
+    lines = []
+    for para in text.replace("\n", "|").split("|"):
+        line = ""
+        for ch in para:
+            if d.textlength(line + ch, font=font) <= max_w:
+                line += ch
+                continue
+            # 折り返し
+            if ch in NO_HEAD and line:
+                # 追い出し: 直前の1文字を次行へ送る
+                lines.append(line[:-1])
+                line = line[-1] + ch
+            elif line and line[-1] in NO_TAIL:
+                lines.append(line[:-1])
+                line = line[-1] + ch
+            else:
+                lines.append(line)
+                line = ch
+        lines.append(line)
+    return [l for l in lines if l != ""] or [""]
 
 
 def make(title, subtitle, out):
@@ -32,18 +66,11 @@ def make(title, subtitle, out):
     tw = d.textlength(tag, font=tag_font)
     d.rounded_rectangle([80, 70, 80 + tw + 48, 128], radius=29, fill=(255, 255, 255))
     d.text((80 + 24, 82), tag, font=tag_font, fill=(26, 95, 180))
-    # タイトル（自動折り返し・最大3行）
+    # タイトル（自動折り返し・最大3行。収まらなければ縮小）
     size = 76
     while size >= 48:
         f = ImageFont.truetype(FONT_BLACK, size, index=2)
-        lines, line = [], ""
-        for ch in title:
-            if d.textlength(line + ch, font=f) > W - 180:
-                lines.append(line)
-                line = ch
-            else:
-                line += ch
-        lines.append(line)
+        lines = wrap(d, title, f, W - 180)
         if len(lines) <= 3:
             break
         size -= 6
@@ -64,7 +91,8 @@ def make(title, subtitle, out):
     s = "教育機関向け総合DXプラットフォーム"
     sw = d.textlength(s, font=small)
     d.text((W - 100 - sw, H - 44), s, font=small, fill=(160, 195, 235))
-    img.save(out)
+    os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
+    img.save(out, optimize=True)
     print("saved:", out)
 
 
