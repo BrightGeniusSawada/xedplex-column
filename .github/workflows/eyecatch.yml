@@ -1,0 +1,44 @@
+# tools/eyecatch.json が更新されたら images/<slug>.png を自動生成してコミットする
+name: Build eyecatch images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/eyecatch.json"
+      - "tools/eyecatch.py"
+      - "tools/build_eyecatch.py"
+      - ".github/workflows/eyecatch.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eyecatch
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install fonts and Pillow
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+          python3 -m pip install --quiet pillow
+      - name: Generate images
+        run: python3 tools/build_eyecatch.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images
+          if git diff --cached --quiet; then
+            echo "no image changes"
+          else
+            git commit -m "アイキャッチ画像を自動生成"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
