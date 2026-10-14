@@ -56,5 +56,6 @@
   {"slug": "kyuko-kinkyu-renraku-taifu", "title": "台風の日の休講、|どう判断していますか？", "subtitle": "判断基準と緊急連絡の仕組み"},
   {"slug": "kanri-system-norikae-data-ikou", "title": "システムの乗り換え、|データ移行どう進める？", "subtitle": "止めずに移す8週間の段取り"},
   {"slug": "juku-joho-ichigenka-susumekata", "title": "塾の情報、|あちこちに散らばっていない？", "subtitle": "LINE・エクセル・紙の一元化"},
-  {"slug": "tsujuku-kiroku-hogosha-anshin", "title": "「ちゃんと通ってる？」|保護者にどう見せる？", "subtitle": "出席・在室・学習の3つの記録"}
+  {"slug": "tsujuku-kiroku-hogosha-anshin", "title": "「ちゃんと通ってる？」|保護者にどう見せる？", "subtitle": "出席・在室・学習の3つの記録"},
+  {"slug": "kojinjuku-keiri-getsuji-shikumi", "title": "個人塾の経理、|確定申告前にためていない？", "subtitle": "月次で回す記録の仕組み"}
 ]
