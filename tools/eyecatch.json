@@ -59,5 +59,6 @@
   {"slug": "tsujuku-kiroku-hogosha-anshin", "title": "「ちゃんと通ってる？」|保護者にどう見せる？", "subtitle": "出席・在室・学習の3つの記録"},
   {"slug": "kojinjuku-keiri-getsuji-shikumi", "title": "個人塾の経理、|確定申告前にためていない？", "subtitle": "月次で回す記録の仕組み"},
   {"slug": "hogosha-mendan-kaisu-jiki", "title": "保護者面談、|年何回・いつ行う？", "subtitle": "学年別の目安と日程調整の段取り"},
-  {"slug": "hogosha-anketo-tsukurikata-katsuyo", "title": "保護者アンケート、|取って活かせていますか？", "subtitle": "質問項目と結果の返し方"}
+  {"slug": "hogosha-anketo-tsukurikata-katsuyo", "title": "保護者アンケート、|取って活かせていますか？", "subtitle": "質問項目と結果の返し方"},
+  {"slug": "chikoku-taio-rule-juku", "title": "遅刻が多い生徒、|毎回その場で対応していない？", "subtitle": "ルール・連絡・声かけの型"}
 ]
