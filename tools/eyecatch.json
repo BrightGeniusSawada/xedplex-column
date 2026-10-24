@@ -61,5 +61,6 @@
   {"slug": "hogosha-mendan-kaisu-jiki", "title": "保護者面談、|年何回・いつ行う？", "subtitle": "学年別の目安と日程調整の段取り"},
   {"slug": "hogosha-anketo-tsukurikata-katsuyo", "title": "保護者アンケート、|取って活かせていますか？", "subtitle": "質問項目と結果の返し方"},
   {"slug": "chikoku-taio-rule-juku", "title": "遅刻が多い生徒、|毎回その場で対応していない？", "subtitle": "ルール・連絡・声かけの型"},
-  {"slug": "kyodai-waribiki-kimekata", "title": "兄弟割引・複数科目割引、|その場で決めていない？", "subtitle": "割引ルールの6項目と請求の型"}
+  {"slug": "kyodai-waribiki-kimekata", "title": "兄弟割引・複数科目割引、|その場で決めていない？", "subtitle": "割引ルールの6項目と請求の型"},
+  {"slug": "seito-taicho-furyo-kega-taio", "title": "生徒の急な体調不良、|対応の手順は決まってる？", "subtitle": "保護者連絡・引き渡し・記録の型"}
 ]
