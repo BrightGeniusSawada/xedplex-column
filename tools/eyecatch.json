@@ -62,5 +62,6 @@
   {"slug": "hogosha-anketo-tsukurikata-katsuyo", "title": "保護者アンケート、|取って活かせていますか？", "subtitle": "質問項目と結果の返し方"},
   {"slug": "chikoku-taio-rule-juku", "title": "遅刻が多い生徒、|毎回その場で対応していない？", "subtitle": "ルール・連絡・声かけの型"},
   {"slug": "kyodai-waribiki-kimekata", "title": "兄弟割引・複数科目割引、|その場で決めていない？", "subtitle": "割引ルールの6項目と請求の型"},
-  {"slug": "seito-taicho-furyo-kega-taio", "title": "生徒の急な体調不良、|対応の手順は決まってる？", "subtitle": "保護者連絡・引き渡し・記録の型"}
+  {"slug": "seito-taicho-furyo-kega-taio", "title": "生徒の急な体調不良、|対応の手順は決まってる？", "subtitle": "保護者連絡・引き渡し・記録の型"},
+  {"slug": "hogosha-renraku-jikangai-taio", "title": "夜も休日も保護者に返信、|そのままで大丈夫？", "subtitle": "時間外の連絡ルールと受付の型"}
 ]
