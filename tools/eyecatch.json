@@ -65,5 +65,6 @@
   {"slug": "seito-taicho-furyo-kega-taio", "title": "生徒の急な体調不良、|対応の手順は決まってる？", "subtitle": "保護者連絡・引き渡し・記録の型"},
   {"slug": "hogosha-renraku-jikangai-taio", "title": "夜も休日も保護者に返信、|そのままで大丈夫？", "subtitle": "時間外の連絡ルールと受付の型"},
   {"slug": "seito-doshi-trouble-taio", "title": "生徒同士のトラブル、|塾はどこまで対応する？", "subtitle": "聞き取り・保護者連絡・記録の型"},
-  {"slug": "futoko-seito-ukeire-kojinjuku", "title": "不登校の生徒の受け入れ、|塾はどう準備する？", "subtitle": "面談・通い方・保護者との連携"}
+  {"slug": "futoko-seito-ukeire-kojinjuku", "title": "不登校の生徒の受け入れ、|塾はどう準備する？", "subtitle": "面談・通い方・保護者との連携"},
+  {"slug": "hogoshakai-hirakikata-juku", "title": "保護者会、|話して終わりになっていない？", "subtitle": "目的・案内・欠席者フォローの型"}
 ]
