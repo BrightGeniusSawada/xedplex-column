@@ -73,5 +73,6 @@
   {"slug": "online-jugyo-heiyo-kojinjuku", "title": "オンライン授業の併用、|ルールは決めている？", "subtitle": "対象・料金・記録と保護者への案内"},
   {"slug": "nyushi-chokuzenki-unei-goshi-renraku", "title": "入試直前期と合格発表日、|塾の対応は決めている？", "subtitle": "自習室・当日連絡・合否連絡の型"},
   {"slug": "kojinjuku-ryokin-taikei-kimekata", "title": "個人塾の料金表、|説明できますか？", "subtitle": "月謝・諸費用・講習費の決め方"},
-  {"slug": "juku-keiei-suji-maitsuki-kakunin", "title": "塾の生徒数、|毎月どの数字を見ている？", "subtitle": "月1回15分で確認する5つの数字"}
+  {"slug": "juku-keiei-suji-maitsuki-kakunin", "title": "塾の生徒数、|毎月どの数字を見ている？", "subtitle": "月1回15分で確認する5つの数字"},
+  {"slug": "juku-gakudo-heisetsu-unei", "title": "塾に学童を併設するとき、|何を決めておく？", "subtitle": "預かり時間・登下校・保護者連絡"}
 ]
