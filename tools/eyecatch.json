@@ -77,5 +77,6 @@
   {"slug": "juku-gakudo-heisetsu-unei", "title": "塾に学童を併設するとき、|何を決めておく？", "subtitle": "預かり時間・登下校・保護者連絡"},
   {"slug": "kojinjuku-teiin-kimekata-cancel-machi", "title": "個人塾の定員、|どう決めていますか？", "subtitle": "満席時のキャンセル待ちの型"},
   {"slug": "teishutsubutsu-kanri-naishin", "title": "中学生の提出物、|塾でどう管理する？", "subtitle": "ワーク・課題の把握と共有"},
-  {"slug": "goukaku-taikenki-jisseki-keisai", "title": "合格体験記、|春に慌てて集めていない？", "subtitle": "依頼の時期・同意・載せ方の型"}
+  {"slug": "goukaku-taikenki-jisseki-keisai", "title": "合格体験記、|春に慌てて集めていない？", "subtitle": "依頼の時期・同意・載せ方の型"},
+  {"slug": "taijuku-riyu-kikikata-kiroku", "title": "退塾の本当の理由、|聞けていますか？", "subtitle": "聞き取り・記録・振り返りの型"}
 ]
