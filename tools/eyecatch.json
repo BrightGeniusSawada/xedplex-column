@@ -84,5 +84,6 @@
   {"slug": "juku-kaishitsu-heishitsu-checklist", "title": "開室前と閉室後の作業、|毎日頭で覚えていない？", "subtitle": "毎日の業務を回すチェック表"},
   {"slug": "juku-kentei-moshikomi-torimatome", "title": "英検・漢検の取りまとめ、|毎回慌てていない？", "subtitle": "申込・集金・結果共有の型"},
   {"slug": "toki-koshu-koshusei-nyujuku", "title": "冬期講習の講習生、|入塾につながっていますか？", "subtitle": "講習前〜最終日の段取りの型"},
-  {"slug": "jugyochu-denwa-taio-kojinjuku", "title": "授業中に電話に出られない、|どうしていますか？", "subtitle": "取りこぼさない受け方の型"}
+  {"slug": "jugyochu-denwa-taio-kojinjuku", "title": "授業中に電話に出られない、|どうしていますか？", "subtitle": "取りこぼさない受け方の型"},
+  {"slug": "seito-mendan-yarikata-juku", "title": "生徒との面談、|話して終わりになっていない？", "subtitle": "10分で回す進め方と記録の型"}
 ]
