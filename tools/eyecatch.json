@@ -92,5 +92,6 @@
   {"slug": "shinchu1-junbi-koza-unei", "title": "新中1準備講座、|入塾につながっていますか？", "subtitle": "募集時期・案内・面談の型"},
   {"slug": "moshi-kekka-katsuyo-juku", "title": "模試の結果、|配って終わりになっていない？", "subtitle": "返却・記録・保護者共有の型"},
   {"slug": "kobetsu-shido-shindo-kanri", "title": "個別指導の進度、|生徒ごとに把握できている？", "subtitle": "進度表・記録・点検の型"},
-  {"slug": "juku-dayori-tsukurikata", "title": "塾だより、|毎月ネタに困っていない？", "subtitle": "紙面の型とネタ帳で続ける"}
+  {"slug": "juku-dayori-tsukurikata", "title": "塾だより、|毎月ネタに困っていない？", "subtitle": "紙面の型とネタ帳で続ける"},
+  {"slug": "shogatsu-tokkun-event-unei", "title": "正月特訓・勉強イベント、|毎年ゼロから企画してない？", "subtitle": "目的・参加費・当日運営の型"}
 ]
