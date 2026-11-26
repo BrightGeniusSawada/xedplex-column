@@ -94,5 +94,6 @@
   {"slug": "kobetsu-shido-shindo-kanri", "title": "個別指導の進度、|生徒ごとに把握できている？", "subtitle": "進度表・記録・点検の型"},
   {"slug": "juku-dayori-tsukurikata", "title": "塾だより、|毎月ネタに困っていない？", "subtitle": "紙面の型とネタ帳で続ける"},
   {"slug": "shogatsu-tokkun-event-unei", "title": "正月特訓・勉強イベント、|毎年ゼロから企画してない？", "subtitle": "目的・参加費・当日運営の型"},
-  {"slug": "mudan-kesseki-kakunin-taio", "title": "生徒が来ない、連絡もない。|そのときの手順は決まってる？", "subtitle": "無断欠席の確認と記録の型"}
+  {"slug": "mudan-kesseki-kakunin-taio", "title": "生徒が来ない、連絡もない。|そのときの手順は決まってる？", "subtitle": "無断欠席の確認と記録の型"},
+  {"slug": "hogosha-app-toroku-teichaku", "title": "保護者がアプリに|登録してくれない？", "subtitle": "導入時の案内と定着の段取り"}
 ]
