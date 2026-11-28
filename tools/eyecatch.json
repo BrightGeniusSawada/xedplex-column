@@ -96,5 +96,6 @@
   {"slug": "shogatsu-tokkun-event-unei", "title": "正月特訓・勉強イベント、|毎年ゼロから企画してない？", "subtitle": "目的・参加費・当日運営の型"},
   {"slug": "mudan-kesseki-kakunin-taio", "title": "生徒が来ない、連絡もない。|そのときの手順は決まってる？", "subtitle": "無断欠席の確認と記録の型"},
   {"slug": "hogosha-app-toroku-teichaku", "title": "保護者がアプリに|登録してくれない？", "subtitle": "導入時の案内と定着の段取り"},
-  {"slug": "kyozai-erabikata-zaiko-kanri", "title": "塾の教材、|選び方と管理は決めている？", "subtitle": "選定・発注・在庫・配布の型"}
+  {"slug": "kyozai-erabikata-zaiko-kanri", "title": "塾の教材、|選び方と管理は決めている？", "subtitle": "選定・発注・在庫・配布の型"},
+  {"slug": "koshi-meeting-susumekata", "title": "講師ミーティング、|何を話せばいい？", "subtitle": "15分で回す定例と記録の型"}
 ]
